@@ -1,0 +1,15 @@
+<h1>Template Refrence Demo</h1>
+<hr>
+<h2>
+  First Name : <input type="text" #myinput1> <br>
+  Last Name : <input type="text" #myinput2> <br><br>
+  Welcome Mr.Mrs <span>{{fullname}}</span>
+  <br><br>
+  <button (click)="setFullName(myinput1.value, myinput2.value)" >FullName</button>
+  
+</h2>
+<h3>
+  <input type="text" [(ngModel)]="str"><br><br>
+  {{ str }}<br><br>
+  <button (click)="display()" >Display</button>
+</h3>
