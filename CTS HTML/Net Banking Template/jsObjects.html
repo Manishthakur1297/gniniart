@@ -1,0 +1,50 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>Objects Demo</h1>
+        <hr>
+        <h2>
+            <script>
+                var d1 = new Date();
+                document.write(d1);
+                d1.setMonth(15);
+                document.write("<br>"+d1);
+            </script>
+
+            <script>
+                var s = "2+2";
+                var str = new String("2+2");
+
+                document.write("<br>"+eval(s)+"<br>");
+                document.write(eval(str.valueOf())+"<br>");
+
+                var s3 = "hello";
+                var s4 = new String("hello");
+
+                document.write("<br>"+s3.toUpperCase());
+                document.write("<br>"+s4.toUpperCase());
+            </script>
+
+            <hr>
+
+            <script>
+                var b1 = new Boolean(true);
+                var b2 = new Boolean("false");
+                var b3 = new Boolean(0);
+                var b4 = new Boolean("true");
+                var b5 = new Boolean(null);
+
+                document.write("<br>"+b1);
+                document.write("<br>"+b2);
+                document.write("<br>"+b3);
+                document.write("<br>"+b4);
+                document.write("<br>"+b5);
+                
+
+            </script>
+
+        </h2>
+    </body>
+</html>

@@ -1,0 +1,47 @@
+<html>
+    <head>
+        
+    </head>
+<body>
+    <h1>Basic Calculator</h1>
+    <hr>
+    First number : <input type="number" name="fnumber" id="fi"><br>
+    Second Number : <input type="number" name="snumber" id="si"><br><br>
+    
+    Result : <span id="res"></span><br><br>
+
+    <input type="button" value="Add" onClick="calc(1)">
+    <input type="button" value="Sub" onClick="calc(2)">
+    <input type="button" value="Mul" onClick="calc(3)">
+    <input type="button" value="Div" onClick="calc(4)">
+
+
+    <script>
+            function calc(a)
+            {
+                a = parseInt(a);
+                var f = parseInt(document.getElementById('fi').value);
+                var s = parseInt(document.getElementById('si').value);
+                switch(a)
+                {
+                    case 1:
+                        document.getElementById('res').innerText= f+s;
+                        break;
+                    case 2:
+                        document.getElementById('res').innerText = f-s;
+                        break;
+                    case 3:
+                        document.getElementById('res').innerText = f*s;
+                        break;
+                    case 4:
+                        document.getElementById('res').innerText = f/s;
+                        break;
+
+                    default:
+                        break;
+                }
+            }
+        </script>
+
+</body>
+</html>

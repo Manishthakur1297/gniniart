@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login Page</title>
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="style.js"></script>
+    </head>
+
+    <body>
+        <img src="bank1.png" alt="BANK" class="center">
+        <!-- <h1 style="color:#4CAF50;"><marquee>WELCOME TO NET BANKING</marquee></h1> -->
+
+        <ul class="topnav"> 
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a class="active" href="Login.html">Login</a></li>
+            <li><a href="Registration.html">Register</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            
+          </ul>
+
+        <fieldset>
+            <legend>Login Form</legend>
+            <form>
+                    <div class="loginBlock">
+                        <label for="email">Email ID </label><input type="email" name="e_mail" id="email" onblur="emailID()" required autofocus><span class="colorRed" id="emailId">*</span><br>
+                        
+                        <label for="pwd">Password </label><input type="password" name="p_wd" id="pwd" onblur="password()" required><span class="colorRed" id="password">*</span><br>
+                        
+                        <input type="submit" name = "b1" value="LOGIN">
+
+                        <input type="reset" name = "b2" value="CLEAR">
+      
+                    </div>
+
+            </form>
+
+        </fieldset>
+
+
+
+    </body>
+
+</html>

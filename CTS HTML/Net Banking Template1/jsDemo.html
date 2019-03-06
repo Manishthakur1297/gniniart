@@ -1,0 +1,124 @@
+<html>
+    <head>
+        <script>
+            function alertFun()
+            {
+                alert("Hello from Alert");
+
+            }
+            function confirmFun()
+            {
+                res = confirm("Do you want to close the window ? ");
+                if(res)
+                {
+                    close();
+                }
+            }
+
+            function promptFun()
+            {
+                var name = prompt("Enter Name : ");
+                var age = prompt("Age : ");
+                alert("Is it not a number ? "+isNaN(age));
+                document.writeln("<h1> Welcome ! "+name+" "+age);
+
+            }
+
+            function Employee(name,age,salary)
+            {
+                this.Name = name;
+                this.Age = age;
+                this.Salary = salary;
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Javascript</h1>
+        <hr>
+        <script>
+            for(i=1;i<=10;i++)
+            document.write("<h2> Hello Everybody</h2>");
+        </script>
+        <hr>
+        <hr>
+
+        <script>
+            var obj = new Object();
+            obj.name = "Manish";
+            obj.age = 21;
+            document.write("<br> Name : "+obj.name);
+            document.write("<br> Age : "+obj.age);
+            obj.salary = 50000;
+            document.write("<br> Salary : "+obj.salary);
+        </script>
+
+        <hr>
+        
+        <script>
+            var emp = {'Name':'MJ','Age':25,'Salary':50000};
+            document.write("<br> Name : "+emp.Name);
+            document.write("<br> Age : "+emp.Age);
+            document.write("<br> Salary : "+emp.Salary);
+
+        </script>
+
+        <hr>
+
+        <script>
+            var x = 10;
+            document.write("<br>"+x+"<br>");
+            x = "hi";
+            document.write(x+"<br>");
+            x = true;
+            document.write(x+"<br>");
+            x = 1.45;
+            document.write(x+"<br>");
+            x = "105";
+            document.write(x+5+"<br>");
+            document.write(eval(x)+5+"<br>");
+            document.write((parseInt(x)+5)+"<br>");
+            // document.write((eval("105ab")+5)+"<br>");
+            document.write((parseInt("105ab")+7)+"<br>");
+            document.write((parseFloat("105ab")+8)+"<br>");
+        </script>
+
+
+        <script>
+        
+            var e1 = new Employee("Manish",21,80000);
+            var e2 = new Employee("MJ",21,80000);
+            document.write("<br> Employee 1 Details: <br>");
+            document.write("<br> Name : "+e1.Name);
+            document.write("<br> Age : "+e1.Age);
+            document.write("<br> Salary : "+e1.Salary);
+
+            document.write("<br><br> Employee 2 Details: <br>");
+            document.write("<br> Name : "+e2.Name);
+            document.write("<br> Age : "+e2.Age);
+            document.write("<br> Salary : "+e2.Salary)
+
+        </script>
+
+        <script>
+            //alertFun();
+            //confirmFun();
+            //promptFun();
+        </script>
+
+        <script>
+            var arr = new Array();
+            arr[0] = 12;
+            arr[1] = "hi";
+            arr[2] = new Date();
+            arr[3] = true;
+            arr[5] = (eval("123")+5);
+            document.write("<br>Arrays  : <br>")
+            for(i=0;i<arr.length;i++)
+            {`
+                document.write("<br> "+arr[i])
+
+            }
+        </script>
+
+    </body>
+</html>

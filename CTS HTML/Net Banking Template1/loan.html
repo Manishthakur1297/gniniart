@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login Page</title>
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="style.js"></script>
+    </head>
+
+    <body>
+        <img src="bank1.png" alt="BANK" class="center">
+        <!-- <h1 style="color:#4CAF50;"><marquee>WELCOME TO NET BANKING</marquee></h1> -->
+
+        <ul class="topnav"> 
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html" class="active">Services</a></li>
+            <li><a href="Login.html">Login</a></li>
+            <li><a href="Registration.html">Register</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            
+        </ul>
+
+        <h2>Loan....</h2>
+        <hr>
+
+        <fieldset>
+            <legend>Loan Calculator</legend>
+            <form action="#">
+                        <label for="p">Principal </label><input type="number" name="p" id="principal" onblur="Principal()" required autofocus><span class="colorRed" id="pp">*</span><br>
+                        
+                        <label for="r">Rate </label><input type="number" name="r" id="rate" onblur="Rate()" required step="0.01" min="0" max="100"><span class="colorRed" id="rr">*</span><br>
+
+                        <label for="t">Time </label><input type="number" name="t" id="time" onblur="Time()" required step="any" min="0" max="100"><span class="colorRed" id="tt">*</span><br>
+
+                        <label for="i">Interest </label><span id="interest"></span><br><br>
+
+                        
+                        
+                        <input type="button" name = "b3" value="Calculate" onClick="Interest()">
+
+                        <input type="submit" name = "b1" value="Submit">
+
+                        <input type="reset" name = "b2" value="Reset">
+
+            </form>
+
+        </fieldset>
+
+
+        
+          
+
+
+
+    </body>
+
+</html>

@@ -1,0 +1,98 @@
+<html>
+    <head>
+        <title>JS Example</title>
+        <script>
+            var flag = true,flag1 = true;
+            function check()
+            {
+                if(document.f1.t1.value.length < 5)
+                {
+                    alert("Username should be minimum of 5 characters");
+                    return false;
+                }
+                if(isNaN(document.f1.t3.value))
+                {
+                    alert("Age should be number only !!!");
+                    return false;
+                }
+                return true;
+            }
+
+            function abc()
+            {
+                window.location.href = "Login.html";
+            }
+
+            function fn()
+            {
+                var first = document.f1.t1.value;
+                var second = document.f1.t3.value;
+                var details = first+" "+second;
+                document.getElementById("s1").innerText=details;
+            }
+
+            function login()
+            {
+                //document.write("hello");
+                var lg1 = '<html><form name = "f1" action="Login.html"><h3>Username : <input type="text" name="un" required><br>Password : <input type="password" name="pwd" required><br></h3><input type="submit" value="Submit" name = "b1"><input type="reset" value="Reset" name="b2"><input type="button" value="Click" name = "b3" onclick="fn()"></form></html>';
+                if(flag)
+                {
+                    document.getElementById("d1").innerHTML = lg1;
+                    flag = false;
+                }
+                else
+                {
+                    document.getElementById("d1").innerHTML = "";
+                    flag = true;
+                }
+
+            }
+
+
+            function change()
+            {
+                if(flag1)
+                {
+                    document.getElementById("p1").innerText = "Hello Everyone!!!";
+                    flag1 = false;
+                }
+                else
+                {
+                    document.getElementById("p1").innerText = "Boom Boom.....!!!";
+                    flag1 = true;
+                }
+                
+
+            }
+
+        </script>
+    </head>
+    <body>
+        <h1>Please Login</h1>
+        <hr>
+            <form action="Registration.html" name="f1" onsubmit="return check()" method="POST">
+                <h2>
+                    Username : <input type="text" name="t1" required><br>
+                    Password : <input type="password" name="t2" required><br>
+                    Age : <input type="number" name="t3" required><br>
+                    Email : <input type="email" name="t4" required><br>
+                    Your Details : <span id="s1"></span><br><br>
+                    <input type="submit" value="Submit" name = "b1">
+                    <input type="reset" value="Reset" name="b2">
+                    <input type="button" value="Click" name = "b3" onclick="fn()">
+                </h2>
+            </form>
+            <hr>
+
+            <input type="button" value="Click Here" name = "b4" onclick="login()">
+            <div id="d1"></div>
+
+            <hr>
+
+            <h2>
+                <p id="p1" onclick="change()">Change the content .....Boom</p>
+            </h2>
+
+
+    </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login Page</title>
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script>
+                function abc()
+                {
+                    alert("Please fill all details....");
+                }
+        </script>
+    </head>
+
+    <body>
+        <img src="bank1.png" alt="BANK" class="center">
+        <!-- <h1 style="color:#4CAF50;"><marquee>WELCOME TO NET BANKING</marquee></h1> -->
+
+        <ul class="topnav"> 
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li class="dropdown">
+                    <a href="#" class="dropbtn">Services</a>
+                    <div class="dropdown-content">
+                        <a href="account.html">Account</a>
+                        <a href="loan.html">Deposit</a>
+                        <a href="cards.html">Loan</a>
+                        <a href="deposit.html">Cards</a>
+                    </div>
+                </li>
+            <li><a class="active" href="Login.html">Login</a></li>
+            <li><a href="Registration.html">Register</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            
+          </ul>
+
+        <fieldset>
+            <legend>Login Form</legend>
+            <form>
+                    <div class="loginBlock">
+                        <label for="ID">Customer ID</label> <input type="text" id="ID" name = "Cid" placeholder="Customer ID.."><br>
+                        <label for="pwd">Password </label> <input type="password" id="pwd" name = "password" placeholder="Password.."><br>
+                        <input type="submit" name = "b1" value="LOGIN" onclick="abc()">
+                        <input type="reset" name = "b2" value="CLEAR">
+      
+                    </div>
+
+            </form>
+
+        </fieldset>
+
+
+
+    </body>
+
+</html>
