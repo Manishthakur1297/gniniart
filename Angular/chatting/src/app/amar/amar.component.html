@@ -1,0 +1,9 @@
+<h1>Amar</h1>
+<h2>
+  Enter Message : <input type="text" #myinput>
+  <button type="button" (click) = "send(myinput.value)">Send Message</button>
+</h2>
+<h4>
+  <p *ngFor="let msg of msgs">{{msg}}</p>
+</h4>
+<hr>
