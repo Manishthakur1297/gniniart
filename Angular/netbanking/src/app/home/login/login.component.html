@@ -1,0 +1,17 @@
+<fieldset>
+    <legend>Login Form</legend>
+    <form>
+            <div class="loginBlock">
+                <label for="email">Email ID </label><input type="email" name="e_mail" id="email" #e1 (blur) = "emailID(e1)" required autofocus><span class="colorRed" id="emailId">{{e_str}}</span><br>
+                
+                <label for="pwd">Password </label><input type="password" name="p_wd" id="pwd" #p1 (blur) = "password(p1)" required><span class="colorRed" id="password">{{p_str}}</span><br>
+                
+                <input type="submit" name = "b1" value="LOGIN">
+
+                <input type="reset" name = "b2" value="CLEAR">
+
+            </div>
+
+    </form>
+
+</fieldset>

@@ -1,0 +1,20 @@
+<h1><ng-content></ng-content> {{ type }} Loan</h1>
+<hr>
+<h2>
+  Type of Loan : <select (blur)="abc(t1.value)" #t1>
+    <option value="10">Home Loan</option>
+    <option value="8">Car Loan</option>
+    <option value="15">Personal Loan</option>
+    <option value="6">Education Loan</option>
+  </select><br>
+
+
+Principal Amount : <input type="text" #pa><br>
+Tenure/Duration : <input type="text" #td><br>
+Rate of Interest : <input type="text" #roi [(ngModel)]="li"><br>
+
+EMI : {{ emi }}<br><br>
+
+<button type="button" (click)="getEmi(pa.value, td.value, roi.value)">Calculate</button>
+</h2>
+<hr>
