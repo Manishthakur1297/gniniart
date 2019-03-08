@@ -1,0 +1,59 @@
+<h1>Pipe Demo</h1>
+
+<hr>
+<hr>
+
+{{ str }}<br>
+{{ str | uppercase }}<br>
+{{ str | lowercase }}<br>
+{{ str | slice:1:5 }}<br>
+{{ str | slice:1 }}<br>
+
+<hr>
+<hr>
+
+{{ d1 }}<br>
+{{ d1 | date }}<br>
+{{ d1 | date:'dd/MM/yyyy' }}<br>
+{{ d1 | date:'dd/MMM/yyyy' }}<br>
+{{ d1 | date:'dd/MMM/yyyy' | uppercase }}<br>
+
+<hr>
+<hr>
+
+{{ amount }}<br>
+{{ amount | currency }}<br>
+{{ amount | currency:'INR' }}<br>
+{{ amount | currency:'EUR' }}<br>
+{{ amount | currency:'JPY' }}<br>
+{{ amount | currency:'SAR' }}<br>
+
+<hr>
+<hr>
+
+{{ emp }}<br>
+{{ emp | json }}<br>
+
+<hr>
+<hr>
+
+{{ 4 | mySquare }}<br>
+{{ 6 | mySquare }}<br>
+{{ 2 | mySquare }}<br>
+{{ 7 | mySquare }}<br>
+
+<hr>
+<hr>
+
+{{ 4 | myCube }}<br>
+{{ 6 | myCube }}<br>
+{{ 2 | myCube }}<br>
+{{ 7 | myCube }}<br>
+
+<hr>
+<hr>
+
+{{ 4 | myPower }}<br>
+{{ 6 | myPower:'2' }}<br>
+{{ 2 | myPower:'5' }}<br>
+{{ 7 | myPower:'2' }}<br>

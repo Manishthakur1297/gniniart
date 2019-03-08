@@ -1,0 +1,48 @@
+<h1>Directive Demo</h1>
+<hr>
+<h1>Attribute Directives</h1>
+<hr>
+<hr>
+
+<div [ngClass]="{abc:true, xyz:true}">Some Text Content Here</div>
+<hr><hr>
+<div [ngStyle]="{'background-color':'skyblue' , 'color':'white', 'border' : '1px dotted red'}">Some Text Content Here</div>
+
+<hr><hr>
+<h1>Structural Directives</h1>
+<hr>
+<ol>
+  <li *ngFor="let fruit of fruits">{{fruit}}</li>
+</ol>
+<hr><hr>
+<div *ngIf="disp">Just for demo</div>
+<p (click)="abc()">Hide/Unhide Demo</p>
+<hr><hr>
+<div [ngSwitch]="option">
+  <p *ngSwitchCase="1">This is the first content</p>
+  <p *ngSwitchCase="2">This is the second content</p>
+  <p *ngSwitchCase="3">This is the third content</p>
+  <p *ngSwitchCase="4">This is the fourth content</p>
+  <p *ngSwitchDefault>This is the default content</p>
+</div>
+
+<button (click) = "incr()">INCREMENT</button>
+<hr><hr>
+
+<h2>Types of Loan : </h2>
+<select (change)="display(op1.value)" #op1>
+  <option value="1">Home Loan</option>
+  <option value="2">Car Loan</option>
+  <option value="3">Personal Loan</option>
+  <option value="4">Education Loan</option>
+</select>
+
+<hr>
+
+<div [ngSwitch]="op">
+  <p *ngSwitchCase="1"><home></home></p>
+  <p *ngSwitchCase="2"><car></car></p>
+  <p *ngSwitchCase="3"><personal></personal></p>
+  <p *ngSwitchCase="4"><education></education></p>
+  <p *ngSwitchDefault>This is the default content</p>
+</div>
